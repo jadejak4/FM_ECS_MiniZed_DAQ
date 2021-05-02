@@ -6,3 +6,7 @@ Unless mentioned otherwise,follow all the steps mentioned in the Lab 2 PDF,given
 NEVER USE QSPI AND UART TOGETHER.You won't be able to print anything on the SDK terminal,as they share the same microUSB port on board.
 Select the correct DRAM memory part number on the Vivado software,which is MT41K256M16RE-125.None of your codes will work otherwise.
 
+If your synthesis doesn't work,try generating output products again.
+READ THE GUIDE TO FPGA DEV ON MINIZED before desiging.
+
+You have to enable QPSI first during uploading.While programming flash on the Xilinx SDK,choose qspi-x1-dual stacked,else your flash operation wont work.
