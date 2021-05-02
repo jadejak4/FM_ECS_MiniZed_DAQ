@@ -10,3 +10,5 @@ If your synthesis doesn't work,try generating output products again.
 READ THE GUIDE TO FPGA DEV ON MINIZED before desiging.
 
 You have to enable QPSI first during uploading.While programming flash on the Xilinx SDK,choose qspi-x1-dual stacked,else your flash operation wont work.
+
+REFER TO Xilinx MASTER XDC and the Pinout mentioned here,for FPGA routing.
