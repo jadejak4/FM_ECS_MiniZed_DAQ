@@ -14,4 +14,5 @@ You have to enable QPSI first during uploading.While programming flash on the Xi
 REFER TO Xilinx MASTER XDC and the Pinout mentioned here,for FPGA routing.
 
 PINOUT:https://www.xilinx.com/support/packagefiles/z7packages/xc7z007sclg225pkg.txt
+
 MASTER XDC:https://github.com/Avnet/hdl/blob/master/Boards/MINIZED/minized_pins.xdc
