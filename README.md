@@ -12,3 +12,6 @@ READ THE GUIDE TO FPGA DEV ON MINIZED before desiging.
 You have to enable QPSI first during uploading.While programming flash on the Xilinx SDK,choose qspi-x1-dual stacked,else your flash operation wont work.
 
 REFER TO Xilinx MASTER XDC and the Pinout mentioned here,for FPGA routing.
+
+PINOUT:https://www.xilinx.com/support/packagefiles/z7packages/xc7z007sclg225pkg.txt
+MASTER XDC:https://github.com/Avnet/hdl/blob/master/Boards/MINIZED/minized_pins.xdc
