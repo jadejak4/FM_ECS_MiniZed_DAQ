@@ -22,18 +22,18 @@ static FATFS fatfs;
 int main()
 {
     init_platform();
-    FIL lol;
+    FIL file;
     UINT l=64;
     f_mount(&fatfs,"",0);
     const char src_str[] = "Formula Manipal:Engineering Formula96";
     u32 len = strlen(src_str);
-    f_open(&lol,FILE,FA_CREATE_ALWAYS | FA_WRITE);
-    f_write(&lol,src_str,(len),&l);
-    f_close(&lol);
+    f_open(&file,FILE,FA_CREATE_ALWAYS | FA_WRITE);
+    f_write(&file,src_str,(len),&l);
+    f_close(&file);
     char dest_str[0];//len<=33
-    f_open(&lol,FILE,FA_READ);
-    f_read(&lol,dest_str,(len+1),&l);
-    f_close(&lol);
+    f_open(&file,FILE,FA_READ);
+    f_read(&file,dest_str,(len+1),&l);
+    f_close(&file);
     xil_printf("%s\r\n",dest_str);
     cleanup_platform();
     return 0;
