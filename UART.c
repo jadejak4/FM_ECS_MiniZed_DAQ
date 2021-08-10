@@ -60,7 +60,7 @@ int main()
     	XUartPs Uart_PS_0;
     int Status;
     	//u8 BufferPtr_tx[10]={'1','2','3','4',5,6,7,8,9,10};
-    	char BufferPtr_rx[5]="Hello";
+    	char BufferPtr_rx[7]="Krishna";
     	/*************************
     	 * UART 0 initialization *
     	 *************************/
@@ -82,7 +82,7 @@ int main()
 
 		    while(1)
 		    {
-		    	XUartPs_Send(&Uart_PS_0, BufferPtr_rx, 5);
+		    	XUartPs_Send(&Uart_PS_0, BufferPtr_rx, 7);
 
 		    }
 
