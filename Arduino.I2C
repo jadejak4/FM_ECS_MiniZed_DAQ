@@ -1,0 +1,23 @@
+// Include the required Wire library for I2C
+#include <Wire.h>
+int LED = 13;
+int x;
+void setup() {
+  // Define the LED pin as Output
+  Serial.begin(115200);
+  pinMode (LED, OUTPUT);
+  Wire.setClock(100000);
+  // Start the I2C Bus as Slave on address 9
+  Wire.begin(9); 
+  // Attach a function to trigger when something is received.
+  Wire.onReceive(receiveEvent);
+}
+void receiveEvent(int bytes) {
+  x = Wire.read();
+  delay(100);
+}
+void loop() {
+  if(x!=0){
+    Serial.println(x);
+}
+}
