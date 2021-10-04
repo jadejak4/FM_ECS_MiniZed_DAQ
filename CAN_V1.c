@@ -273,9 +273,13 @@ static int SendFrame(XCanPs *InstancePtr)
 	 * returns XST_SUCCESS. No check on if TX FIFO is full is needed anymore
 	 * in that case.
 	 */
+	while(1){
+
+
 	Status = XCanPs_Send(InstancePtr, TxFrame);
+	print("Done\n");
+	sleep(1);
+	}
 
 	return Status;
 }
-
-
